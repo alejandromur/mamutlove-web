@@ -1,0 +1,59 @@
+app-root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+not-found,
+collection-welcome {
+  @include animate-show($delay: 50ms);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+collection-album {
+  @include animate-show;
+
+  @for $i from 1 to 21 {
+    &:nth-child(#{$i}) {
+      animation-delay: 50ms * $i;
+    }
+  }
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  background: var(--white-color);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 1rem 0 var(--gray-color);
+  color: var(--secondary-color);
+  transition: box-shadow $slow $ease-in, transform $fast $ease-in, color $slow $ease-in;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    color: var(--primary-color);
+    box-shadow: 0 0 1.5rem 0 var(--gray-color);
+    transform: translate3d(0, -0.5rem, 0);
+
+    .card__info__subheading {
+      color: var(--primary-color);
+    }
+  }
+
+  @include mq($from: desktop) {
+    max-width: 18.25rem;
+  }
+
+  + collection-album {
+    margin-top: 1rem;
+
+    @include mq($from: tablet) {
+      margin-top: 0;
+    }
+  }
+}

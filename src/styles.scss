@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+// @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+// Config
+// ------------
+@import './scss/config/mq';
+@import './scss/config/functions';
+@import './scss/config/mixins';
+@import './scss/config/variables';
+@import './scss/config/colors';
+@import './scss/config/fonts';
+@import './scss/config/animations';
+// @import 'config/debug';
+
+// Base
+// ------------
+@import './scss/base/normalize';
+@import './scss/base/basics';
+@import './scss/base/utilities';
+
+// Layout
+// ------------
+@import './scss/layout/base';
+@import './scss/layout/shared';
+
+// Components
+// ------------
+@import './scss/components/spinner';
+@import './scss/components/disclaimer';
+@import './scss/components/buttons';
+@import './scss/components/forms';
+
+// Pages
+// ------------
+@import './scss/pages/page-default';

@@ -1,0 +1,80 @@
+%button-base {
+  display: inline-flex;
+  background-color: var(--transparent);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1.125rem;
+  color: currentColor;
+  line-height: 1.4;
+  transition: background-color 250ms $ease-in;
+  text-decoration: none;
+  text-align: center;
+  border-radius: $radius;
+  will-change: background-color;
+
+  &:focus,
+  &:hover {
+    transition: background-color 200ms $ease-in;
+  }
+
+  & ~ & {
+    margin-left: 0.5rem;
+  }
+
+  > svg {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+%button {
+  @extend %button-base;
+  color: var(--secondary-color);
+  background-color: var(--secondary-lighten-color);
+
+  &[disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}
+
+%button-primary {
+
+  &:focus,
+  &:hover {
+    background-color: var(--primary-color);
+  }
+}
+
+%button-secondary {
+
+  &:focus,
+  &:hover {
+    background-color: var(--yellow-color);
+  }
+}
+
+%button-tertiary {
+
+  &:focus,
+  &:hover {
+    background-color: var(--red-color);
+  }
+}
+
+.button-primary {
+  @extend %button;
+  @extend %button-primary;
+}
+
+.button-secondary {
+  @extend %button;
+  @extend %button-secondary;
+}
+
+.button-tertiary {
+  @extend %button;
+  @extend %button-tertiary;
+}

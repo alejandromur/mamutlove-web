@@ -1,0 +1,42 @@
+// Dev
+//-----------
+$dev: #f06;
+$dev-1: rgb(20, 140, 220);
+$dev-2: rgb(125, 34, 178);
+$dev-3: yellowgreen;
+
+// Namespace
+// -----------
+$namespace: 'mamutlove';
+
+// Brand Colours
+//-----------
+:root {
+  --primary-color: turquoise;
+  --primary-lighten-color: #59efe0;
+  --primary-darken-color: #3fd8c9;
+  --secondary-color: #333333;
+  --secondary-lighten-color: #e9e9e9;
+  --secondary-darken-color: #adadad;
+  --tertiary-color: #6b3870;
+  --tertiary-lighten-color: lighten(var(--tertiary-color), 10%);
+  --tertiary-darken-color: darken(var(--tertiary-color), 10%);
+  --red-color: #fd4855;
+  --yellow-color: #ffe600;
+  --green-color: #50aa00;
+  --gray-color: #f4f4f4;
+  --white-color: #ffffff;
+  --aside-color: #ececec;
+  --aside-separator-color: #e7e7e7;
+}
+
+// Text Colours
+//-----------
+$text-color: var(--secondary-color);
+$text-button-color: var(--white-color);
+
+// States Colours
+//-----------
+$error: var(--red-color);
+$success: var(--success-color);
+$callout: var(--gray-color);
