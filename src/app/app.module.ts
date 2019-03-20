@@ -11,8 +11,12 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// Components
+import { ListComponent } from './pages/list/list.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ListComponent, NotFoundComponent],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
