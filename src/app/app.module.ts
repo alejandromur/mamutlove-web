@@ -12,11 +12,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // Components
-import { ListComponent } from './pages/list/list.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { PostsListComponent } from './pages/blog/postsList/postsList.component';
+import { PostComponent } from './pages/blog/post/post.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
-  declarations: [AppComponent, ListComponent, NotFoundComponent],
+  declarations: [
+    AppComponent,
+    NotFoundComponent,
+    BlogComponent,
+    PostsListComponent,
+    PostComponent,
+  ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),

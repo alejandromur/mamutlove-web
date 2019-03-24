@@ -26,21 +26,7 @@ body {
   font-weight: $regular;
   font-size: 100%;
   line-height: 1.4;
-}
-
-fieldset {
-  padding: 1.5rem;
-  border-color: var(--secondary-darken-color);
-  border-color: var(--secondary-lighten-color);
-  border-radius: $radius;
-
-  & + & {
-    margin-top: 1rem;
-  }
-}
-
-textarea {
-  resize: vertical;
+  color: var(--black);
 }
 
 img {
@@ -59,23 +45,6 @@ dd {
   list-style-type: none;
 }
 
-ol {
-  counter-reset: item;
-
-  > li {
-    padding-left: 1rem;
-    position: relative;
-
-    &::before {
-      counter-increment: item;
-      content: counters(item, '.') ' ';
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  }
-}
-
 h1,
 h2,
 h3,
@@ -85,7 +54,6 @@ h6 {
   margin-top: 0;
   margin-bottom: 0;
   font-family: $ff-sans-serif;
-  // font-weight: normal;
   line-height: 1.2;
 }
 
