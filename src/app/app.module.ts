@@ -12,15 +12,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // Components
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { MamutComponent } from './pages/mamut/mamut.component';
+import { ProfileComponent } from './pages/mamut/profile/profile.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { PostsListComponent } from './pages/blog/postsList/postsList.component';
 import { PostComponent } from './pages/blog/post/post.component';
-import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NotFoundComponent,
+    MamutComponent,
+    ProfileComponent,
     BlogComponent,
     PostsListComponent,
     PostComponent,
