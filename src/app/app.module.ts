@@ -12,6 +12,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // Components
+import { HeaderComponent } from './components/header/header.component';
+
+// Pages
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { MamutComponent } from './pages/mamut/mamut.component';
 import { ProfileComponent } from './pages/mamut/profile/profile.component';
@@ -22,6 +25,7 @@ import { PostComponent } from './pages/blog/post/post.component';
 @NgModule({
   declarations: [
     AppComponent,
+    HeaderComponent,
     NotFoundComponent,
     MamutComponent,
     ProfileComponent,
