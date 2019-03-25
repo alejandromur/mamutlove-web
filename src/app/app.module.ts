@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
 
 // Components
 import { HeaderComponent } from './components/header/header.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
 
 // Pages
 import { NotFoundComponent } from './pages/not-found/not-found.component';
@@ -26,6 +27,7 @@ import { PostComponent } from './pages/blog/post/post.component';
   declarations: [
     AppComponent,
     HeaderComponent,
+    NavigationComponent,
     NotFoundComponent,
     MamutComponent,
     ProfileComponent,
