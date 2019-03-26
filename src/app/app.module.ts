@@ -12,9 +12,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 // Components
-import { HeaderComponent } from './components/header/header.component';
-import { NavigationComponent } from './components/navigation/navigation.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { NavigationComponent } from './shared/navigation/navigation.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 // Pages
 import { NotFoundComponent } from './pages/not-found/not-found.component';
