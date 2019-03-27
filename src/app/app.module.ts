@@ -15,14 +15,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { NavigationComponent } from './shared/navigation/navigation.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { ProfileComponent } from './shared/profile/profile.component';
 
 // Pages
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { MamutComponent } from './pages/mamut/mamut.component';
-import { ProfileComponent } from './pages/mamut/profile/profile.component';
+import { MemberComponent } from './pages/member/member.component';
 import { BlogComponent } from './pages/blog/blog.component';
-import { PostsListComponent } from './pages/blog/postsList/postsList.component';
-import { PostComponent } from './pages/blog/post/post.component';
+import { PostsListComponent } from './pages/postsList/postsList.component';
+import { PostComponent } from './pages/post/post.component';
 
 @NgModule({
   declarations: [
@@ -30,9 +31,10 @@ import { PostComponent } from './pages/blog/post/post.component';
     HeaderComponent,
     NavigationComponent,
     FooterComponent,
+    ProfileComponent,
     NotFoundComponent,
     MamutComponent,
-    ProfileComponent,
+    MemberComponent,
     BlogComponent,
     PostsListComponent,
     PostComponent,

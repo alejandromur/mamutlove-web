@@ -1,0 +1,12 @@
+<!-- <ul>
+  <li *ngFor="let item of (profiles | async)">
+    {{ item.name }}
+  </li>
+</ul> -->
+<!-- <img
+  src="assets/images/{{ (item | async)?.image }}"
+  alt="{{ (item | async)?.name }}{{ (item | async)?.surname }}"
+/>
+<h1>{{ (item | async)?.name }} {{ (item | async)?.surname }}</h1>
+<h2>{{ (item | async)?.role }}</h2> -->
+<app-profile [memberProfile]="member | async"></app-profile>

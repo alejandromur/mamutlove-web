@@ -1,0 +1,29 @@
+<aside class="profile">
+  <figure class="profile__figure">
+    <img
+      class="profile__image"
+      src="assets/images/{{ memberProfile.image }}"
+      alt="Foto retrato de {{ memberProfile.name }}"
+    />
+  </figure>
+  <div class="profile__info">
+    <h1 class="profile__name">
+      {{ memberProfile.name }} {{ memberProfile.surname }}
+    </h1>
+    <p class="profile__description">{{ memberProfile.role }}</p>
+    {{ memberProfile | json }}
+    <ul class="profile__social">
+      <!-- <li *ngFor="let socialItem of (memberProfile.social | values)">
+        <a
+          class="profile__link"
+          href="{{ socialItem.url }}"
+          title="{{ socialItem.title }}"
+          target="_blank"
+        >
+          <span class="sr-only">{{ socialItem.title }}</span>
+          <i class="{{ socialItem.icon }}"></i>
+        </a>
+      </li> -->
+    </ul>
+  </div>
+</aside>
