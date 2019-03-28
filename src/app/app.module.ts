@@ -11,6 +11,9 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// Services
+import { MemberService } from './services/members.service';
+
 // Components
 import { HeaderComponent } from './shared/header/header.component';
 import { NavigationComponent } from './shared/navigation/navigation.component';
@@ -46,7 +49,7 @@ import { PostComponent } from './pages/post/post.component';
     AngularFirestoreModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [MemberService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

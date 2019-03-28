@@ -11,19 +11,19 @@
       {{ memberProfile.name }} {{ memberProfile.surname }}
     </h1>
     <p class="profile__description">{{ memberProfile.role }}</p>
-    {{ memberProfile | json }}
+    <!-- {{ social | json }} -->
     <ul class="profile__social">
-      <!-- <li *ngFor="let socialItem of (memberProfile.social | values)">
+      <li *ngFor="let item of memberProfile.social">
         <a
           class="profile__link"
-          href="{{ socialItem.url }}"
-          title="{{ socialItem.title }}"
+          href="{{ item.url }}"
+          title="{{ item.title }}"
           target="_blank"
-        >
-          <span class="sr-only">{{ socialItem.title }}</span>
-          <i class="{{ socialItem.icon }}"></i>
+          >{{ item.title }}
+          <span class="sr-only">{{ item.title }}</span>
+          <i class="{{ item.icon }}"></i>
         </a>
-      </li> -->
+      </li>
     </ul>
   </div>
 </aside>

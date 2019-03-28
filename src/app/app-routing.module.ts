@@ -30,11 +30,12 @@ const routes: Routes = [
         component: PostsListComponent,
       },
       {
-        path: 'posts/:id',
+        path: ':id',
+        pathMatch: 'full',
         component: PostComponent,
       },
       {
-        path: '',
+        path: '**',
         pathMatch: 'full',
         redirectTo: 'posts',
       },

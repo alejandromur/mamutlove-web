@@ -5,8 +5,9 @@ import {
   AngularFirestoreDocument,
   AngularFirestoreCollection,
 } from '@angular/fire/firestore';
-import { Observable } from 'rxjs';
 import { CvModel } from '../../model/cv.model';
+import { MemberService } from '../../services/members.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-member',
@@ -14,27 +15,25 @@ import { CvModel } from '../../model/cv.model';
   styleUrls: ['./member.component.scss'],
 })
 export class MemberComponent implements OnInit {
-  // private itemsCollection: AngularFirestoreCollection<CvModel>;
+  constructor(private ms: MemberService, private route: ActivatedRoute) {}
+
+  // Retrieve a Collection
   // members: Observable<CvModel[]>;
-  // constructor(private afs: AngularFirestore) {
-  //   this.itemsCollection = afs.collection<CvModel>('profiles');
-  //   this.members = this.itemsCollection.valueChanges();
+  // public collection = 'profiles';
+  // async ngOnInit() {
+  //   this.members = await this.ms.getMembers(this.collection);
   // }
+
+  // Retrieve a Document
   public memberName: string;
-  public documentPath = 'profiles/alejandro';
-  private itemDoc: AngularFirestoreDocument<CvModel>;
+  public document = 'profiles/alejandro';
   member: Observable<CvModel>;
-  constructor(private afs: AngularFirestore, private route: ActivatedRoute) {
+
+  async ngOnInit() {
     this.memberName = this.route.snapshot.paramMap.get('profile');
     if (this.memberName !== 'alejandro') {
-      this.documentPath = 'profiles/nora';
+      this.document = 'profiles/nora';
     }
-    this.itemDoc = afs.doc<CvModel>(this.documentPath);
-    this.member = this.itemDoc.valueChanges();
+    this.member = await this.ms.getMember(this.document);
   }
-  update(member: CvModel) {
-    this.itemDoc.update(member);
-  }
-
-  ngOnInit() {}
 }
