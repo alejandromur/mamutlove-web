@@ -1,0 +1,15 @@
+@import 'config/vars';
+@import 'config/colors';
+
+:host {
+  flex: 0 0 auto;
+  padding: 0.5rem 2rem;
+  font-size: 0.875rem;
+  color: var(--mamut);
+  background-color: var(--light-grey);
+}
+
+p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}

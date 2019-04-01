@@ -1,0 +1,8 @@
+@import 'config/vars';
+@import 'config/colors';
+
+:host {
+  flex: 0 0 auto;
+  padding: 0.5rem 2rem;
+  border-top: 0.5rem solid var(--mamut);
+}

@@ -1,0 +1,12 @@
+@import 'config/vars';
+@import 'config/colors';
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  max-width: 5rem;
+  margin-right: auto;
+}

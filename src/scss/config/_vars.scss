@@ -1,3 +1,7 @@
+:root {
+  --wrapper-width: 60rem;
+}
+
 // Easing
 //-----------
 //
@@ -27,7 +31,7 @@ $z-layers: (
   dropdown: 100,
   overlay: 300,
   modal: 400,
-  spinner: 500
+  spinner: 500,
 );
 
 // Utilities

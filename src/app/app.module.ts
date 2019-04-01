@@ -24,7 +24,6 @@ import { ProfileComponent } from './shared/profile/profile.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { MamutComponent } from './pages/mamut/mamut.component';
 import { MemberComponent } from './pages/member/member.component';
-import { BlogComponent } from './pages/blog/blog.component';
 import { PostsListComponent } from './pages/postsList/postsList.component';
 import { PostComponent } from './pages/post/post.component';
 
@@ -38,7 +37,6 @@ import { PostComponent } from './pages/post/post.component';
     NotFoundComponent,
     MamutComponent,
     MemberComponent,
-    BlogComponent,
     PostsListComponent,
     PostComponent,
   ],

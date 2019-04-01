@@ -51,8 +51,6 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: 0;
   font-family: $ff-sans-serif;
   line-height: 1.2;
 }
@@ -62,7 +60,7 @@ h1 {
 }
 
 p {
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -84,11 +82,11 @@ a {
 }
 
 ::-moz-selection {
-  color: var(--white-color);
-  background-color: var(--primary-color);
+  color: var(--light-grey);
+  background-color: var(--black);
 }
 
 ::selection {
-  color: var(--white-color);
-  background-color: var(--primary-color);
+  color: var(--light-grey);
+  background-color: var(--black);
 }
